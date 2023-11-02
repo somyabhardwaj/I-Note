@@ -1,0 +1,1 @@
+// A package.json "type" value of "module" tells Node.js to interpret .js files within that package as using ES module syntax. 
