@@ -10,15 +10,15 @@ app.use(express.json());
 
 // Middleware for handeling cors policy
 //option 1 
-// app.use(cors());
+app.use(cors());
 //option 2: Allow custom origins
 
-app.use(cors({
-    origin:'http://localhost:3000',
-    methods:['GET','POST','PUT','DELETE'],
-    allowedHeaders:['content-type'],
+// app.use(cors({
+//     origin:'http://localhost:3000',
+//     methods:['GET','POST','PUT','DELETE'],
+//     allowedHeaders:['content-type'],
 
-})) ;
+// })) ;
 
 app.get('/',(request,response)=>{
     console.log(request);
